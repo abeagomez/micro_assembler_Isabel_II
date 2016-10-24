@@ -2,7 +2,7 @@
 
 from __future__ import print_function
 
-__author__ = 'Amy'
+__author__ = 'Amalia Gómez Marcheco'
 
 import sys
 import re
