@@ -23,56 +23,107 @@
   valores constantes (K).                
   
   NOP                 000000 .... .... ..................
+  
   MOV RD,K            000001 xxxx .... ..xxxxxxxxxxxxxxxx
+  
   MOV RD,RA           000010 xxxx xxxx ..................
+  
   MOV RD,[K]          000011 xxxx .... ..xxxxxxxxxxxxxxxx
+  
   MOV RD,[RA]         000100 xxxx xxxx ..................
+  
   MOV [RA],K          000101 .... xxxx ..xxxxxxxxxxxxxxxx
+  
   MOV [RA],RB         000110 .... xxxx xxxx..............
+  
   MOV [K],RA          000111 .... xxxx ..xxxxxxxxxxxxxxxx
+  
   PUSH RA             001000 .... xxxx ..................
+  
   POP RD              001001 xxxx .... ..................
+  
   CALL K              001010 .... .... ..xxxxxxxxxxxxxxxx
+  
   CALL RA             001011 .... xxxx ..................
+  
   RET                 001100 .... .... ..................
+  
   JMP K               001101 .... .... ..xxxxxxxxxxxxxxxx
+  
   JMP RA              001110 .... xxxx ..................
+  
   JZ K                010000 .... .... ..xxxxxxxxxxxxxxxx
+  
   JN K                010001 .... .... ..xxxxxxxxxxxxxxxx
+  
   JE K                010010 .... .... ..xxxxxxxxxxxxxxxx
+  
   JNE K               010011 .... .... ..xxxxxxxxxxxxxxxx
+  
   JGT K               010100 .... .... ..xxxxxxxxxxxxxxxx
+  
   JGE K               010101 .... .... ..xxxxxxxxxxxxxxxx
+  
   JLT K               010110 .... .... ..xxxxxxxxxxxxxxxx
+  
   JLE K               010111 .... .... ..xxxxxxxxxxxxxxxx
+  
   TTY RA              011000 .... xxxx ..................
+  
   TTY K               011001 .... .... ..xxxxxxxxxxxxxxxx
+  
   KBD R1              011010 xxxx .... ..................
+  
   ADD RD,RA,K         100000 xxxx xxxx ..xxxxxxxxxxxxxxxx
+  
   ADD RD,RA,RB        100001 xxxx xxxx xxxx..............
+  
   SUB RD,RA,K         100010 xxxx xxxx ..xxxxxxxxxxxxxxxx
+  
   SUB RD,RA,RB        100011 xxxx xxxx xxxx..............
+  
   MUL RD,RA,K         100100 xxxx xxxx ..xxxxxxxxxxxxxxxx
+  
   MUL RD,RA,RB        100101 xxxx xxxx xxxx..............
+  
   DIV RD,RA,K         100110 xxxx xxxx ..xxxxxxxxxxxxxxxx
+  
   DIV RD,RA,RB        100111 xxxx xxxx xxxx..............
+  
   MOD RD,RA,K         101000 xxxx xxxx ..xxxxxxxxxxxxxxxx
+  
   MOD RD,RA,RB        101001 xxxx xxxx xxxx..............
+  
   AND RD,RA,K         101010 xxxx xxxx ..xxxxxxxxxxxxxxxx
+  
   AND RD,RA,RB        101011 xxxx xxxx xxxx..............
+  
   OR RD,RA,K          101100 xxxx xxxx ..xxxxxxxxxxxxxxxx
+  
   OR RD,RA,RB         101101 xxxx xxxx xxxx..............
+  
   XOR RD,RA,K         101110 xxxx xxxx ..xxxxxxxxxxxxxxxx
+  
   XOR RD,RA,RB        101111 xxxx xxxx xxxx..............
+  
   SHL RD,K            110000 xxxx .... ..xxxxxxxxxxxxxxxx
+  
   SHL RD,RA           110001 xxxx xxxx ..................
+  
   ROL RD,K            110010 xxxx .... ..xxxxxxxxxxxxxxxx
+  
   ROL RD,RA           110011 xxxx xxxx ..................
+  
   CMP RA,K            110100 .... xxxx ..xxxxxxxxxxxxxxxx
+  
   CMP RA,RB           110101 .... xxxx xxxx..............
+  
   NEG RD,RA           110110 xxxx xxxx ..................
+  
   NOT RD,RA           110111 xxxx xxxx ..................
+  
   RND RD              111000 xxxx .... ..................
+  
   HALT                111100 .... .... ..................
   
  
