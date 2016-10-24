@@ -20,19 +20,7 @@
   La tabla siguiente muestra el juego de instrucciones, y su codificación.  Los 6
   primeros bits son el opcode. Luego vienen tres grupos de 4 bits para los
   registros RD (registro de destino), RA y RB. Los últimos 16 bits son para los
-  valores constantes (K).
-  
-  Note que K y RB comparten dos bits. Naturalmente, ninguna instrucción usa a la
-  vez a K y a RB. Los puntos representan bits que no se utilizan durante la
-  interpretación de una instrucción.
-  
-  Mnemónico           Codificación
-  ---------           -----------------------------------
-  
-                      OpCode  RD   RA   RB  
-                      012345 7890 1234 5678 
-                                                K
-                                         7890123456789012
+  valores constantes (K).                
   
   NOP                 000000 .... .... ..................
   MOV RD,K            000001 xxxx .... ..xxxxxxxxxxxxxxxx
@@ -87,7 +75,8 @@
   RND RD              111000 xxxx .... ..................
   HALT                111100 .... .... ..................
   
-  El procesador debe implementarse como el módulo ISABEL-2 del circuito
+ 
+ El procesador debe implementarse como el módulo ISABEL-2 del circuito
   Isabel 2 Board que se brinda.
   
   Instrucciones
